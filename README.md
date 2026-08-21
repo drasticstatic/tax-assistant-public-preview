@@ -2,9 +2,15 @@
 
 > AI-assisted tax position management — back-tax relief navigation, transaction-history reconstruction, filing support
 
+<p align="left"><a href="https://drasticstatic.github.io/tax-assistant-public-preview/"><img src="https://img.shields.io/badge/%F0%9F%8C%90%20Public%20Preview-Configured-brightgreen" alt="Public Preview"></a> <a href="https://github.com/open-condo-software/gitexporter"><img src="https://img.shields.io/badge/Synced%20via-GitExporter-blue" alt="Synced via GitExporter"></a> <a href="https://code.claude.com/docs/en/overview"><img src="https://img.shields.io/badge/Built%20with-Claude%20Code%20CLI-blueviolet" alt="Built with Claude Code CLI"></a> <a href="https://github.com/drasticstatic/tax-assistant/actions/workflows/sync-public.yml"><img src="https://github.com/drasticstatic/tax-assistant/actions/workflows/sync-public.yml/badge.svg" alt="Sync"></a></p>
+
 ---
 
-> 🔒 Public mirror notice: This repository will be partially mirrored as a public preview of the private source via an automated sync pipeline, matching the pattern used by [`divorce-custody-assistant`](https://github.com/drasticstatic/divorce-custody-assistant). Until something is explicitly reviewed and allowlisted for export, the public mirror stays empty.
+**🌐 [Explore the Public Preview →](https://drasticstatic.github.io/tax-assistant-public-preview/)**
+
+---
+
+> 🔒 Public mirror notice: This repository is partially mirrored as a public preview of the private source via an automated sync pipeline, matching the pattern used by [`divorce-custody-assistant`](https://drasticstatic.github.io/divorce-custody-assistant-public-preview/). The public mirror stays minimal until content is explicitly reviewed and allowlisted for export — see the Public preview boundary section below.
 
 ## What this project is for
 
@@ -44,4 +50,4 @@ This repo's operating posture is full legal compliance pursued through legitimat
 
 ---
 
-*Companion repos in this ecosystem: [`divorce-custody-assistant`](https://github.com/drasticstatic/divorce-custody-assistant) · [`trading-assistant`](https://github.com/drasticstatic/trading-assistant)*
+*Companion repos in this ecosystem: [Divorce & Custody Assistant](https://drasticstatic.github.io/divorce-custody-assistant-public-preview/) · [Trading Assistant](https://drasticstatic.github.io/trading-assistant-public-preview/) (see its live [Tax Tracker](https://drasticstatic.github.io/trading-assistant-public-preview/data/tax/tax.html))*
