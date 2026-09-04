@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Form 433-F — Fill-In Framework (Example)</title>
+<style>
+:root {
+  color-scheme: dark;
+  --bg: #020617; --panel: rgba(15, 23, 42, 0.85); --container: rgba(15, 23, 42, 0.5);
+  --text: #e2e8f0; --muted: #94a3b8; --accent: #fbbf24; --accent-2: #f87171;
+  --border: rgba(148, 163, 184, 0.22); --ok: #4ade80;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 24px; font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, rgba(251,191,36,0.12), transparent 32%), linear-gradient(180deg, #0f172a 0%, var(--bg) 100%);
+  color: var(--text); line-height: 1.5;
+}
+main { max-width: 880px; margin: 0 auto; }
+h1 { font-size: 1.7rem; margin: 0 0 4px; }
+.sub { color: var(--muted); font-size: 0.95rem; margin: 0 0 20px; }
+.callout { border: 1px solid var(--accent-2); border-left: 4px solid var(--accent-2); background: rgba(248,113,113,0.08); border-radius: 10px; padding: 14px 18px; margin-bottom: 20px; font-size: 0.92rem; }
+.callout strong { color: var(--accent-2); }
+.context { border: 1px solid var(--border); background: var(--container); border-radius: 12px; padding: 16px 20px; margin-bottom: 24px; font-size: 0.9rem; color: var(--muted); }
+.context h3 { margin: 0 0 8px; color: var(--accent); font-size: 0.95rem; }
+.context ul { margin: 6px 0 0; padding-left: 20px; }
+section.card { border: 1px solid var(--border); background: var(--panel); border-radius: 14px; padding: 18px 22px; margin-bottom: 16px; }
+section.card h2 { margin: 0 0 4px; font-size: 1.15rem; }
+section.card .note { color: var(--muted); font-size: 0.85rem; margin: 0 0 14px; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+.row.three { grid-template-columns: repeat(3, 1fr); }
+.row.one { grid-template-columns: 1fr; }
+.field { display: flex; flex-direction: column; gap: 4px; }
+.field label { font-size: 0.78rem; color: var(--muted); font-weight: 600; }
+.field input, .field textarea { background: rgba(2,6,23,0.6); border: 1px solid var(--border); border-radius: 8px; color: var(--text); padding: 8px 10px; font-size: 0.92rem; font-family: inherit; }
+.field input:focus, .field textarea:focus { outline: 1px solid var(--accent); border-color: var(--accent); }
+.skip-badge { display: inline-block; font-size: 0.68rem; font-weight: 700; color: var(--accent-2); background: rgba(248,113,113,0.12); padding: 1px 7px; border-radius: 999px; margin-left: 6px; }
+.entry-block { border-top: 1px solid var(--border); padding-top: 10px; margin-top: 10px; }
+.entry-block:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+.checklist { list-style: none; margin: 0; padding: 0; }
+.checklist li { display: flex; align-items: flex-start; gap: 8px; padding: 5px 0; font-size: 0.9rem; }
+.checklist input[type="checkbox"] { margin-top: 3px; }
+.script { border: 1px solid var(--ok); border-left: 4px solid var(--ok); background: rgba(74,222,128,0.06); border-radius: 10px; padding: 14px 18px; font-size: 0.9rem; margin-bottom: 20px; }
+.script h3 { margin: 0 0 8px; color: var(--ok); font-size: 0.95rem; }
+.script p { margin: 6px 0; }
+.save-status { position: fixed; bottom: 16px; right: 16px; font-size: 0.75rem; color: var(--muted); background: var(--panel); border: 1px solid var(--border); padding: 6px 12px; border-radius: 999px; }
+.gen-note { text-align: center; font-size: 0.72rem; color: var(--muted); margin-top: 24px; }
+@media print { .save-status { display: none; } body { background: white; color: black; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>📋 Form 433-F — Fill-In Framework (Example)</h1>
+  <p class="sub">A reusable template for anyone preparing for an IRS Collection Information Statement call — every value shown is a placeholder example, not real data.</p>
+  <div class="callout"><strong>📋 This is a public, generic example.</strong> All institution names and dollar figures shown are placeholders so you can see the shape of the form filled in, then replace them with your own information in your own private copy. Nothing on this page reflects any specific person's real financial data.</div>
+  <div class="script"><h3>☎️ Opening the call — example script</h3><p>"I'm calling to formally establish Currently Not Collectible status and would like to complete Form 433-F with you directly."</p><p>If asked about the origin of a tax balance, state your actual circumstances plainly and factually — the IRS is assessing your <em>current</em> ability to pay, not judging why the balance exists.</p></div>
+  <div class="context"><h3>🧾 About this framework</h3><ul><li>Mirrors the real IRS Form 433-F sections, in plain language</li><li>Built and open-sourced by the maintainer while preparing his own CNC application</li><li>Deliberately excludes any field for SSN, EIN, or full account numbers — build that discipline into your own copy too</li><li>Cryptocurrency is treated as <strong>property</strong>, not currency, by the IRS — use fair-market value as of today</li></ul></div>
+  <section class="card">
+    <h2>📎 Documents to have physically on hand</h2>
+    <p class="note">Check off before the call so nothing stalls the conversation.</p>
+    <ul class="checklist"><li><input type="checkbox" id="chk-0" data-k="chk-0"><label for="chk-0">Most recent IRS notice (has the exact balance + notice number)</label></li><li><input type="checkbox" id="chk-1" data-k="chk-1"><label for="chk-1">Last pay stub(s) or 1099s for current income</label></li><li><input type="checkbox" id="chk-2" data-k="chk-2"><label for="chk-2">Bank statements for all open accounts (balance only needed, not full statement)</label></li><li><input type="checkbox" id="chk-3" data-k="chk-3"><label for="chk-3">Retirement account statements showing the withdrawal dates/amounts</label></li><li><input type="checkbox" id="chk-4" data-k="chk-4"><label for="chk-4">Any 1099-R forms for the retirement liquidations</label></li><li><input type="checkbox" id="chk-5" data-k="chk-5"><label for="chk-5">Rent/mortgage statement</label></li><li><input type="checkbox" id="chk-6" data-k="chk-6"><label for="chk-6">Health insurance premium amount</label></li><li><input type="checkbox" id="chk-7" data-k="chk-7"><label for="chk-7">List of monthly bills (utilities, phone, car, insurance)</label></li><li><input type="checkbox" id="chk-8" data-k="chk-8"><label for="chk-8">Current vehicle registration / loan payoff amount if financed</label></li></ul>
+  </section>
+  <section class="card"><h2>👤 A1 · Household &amp; Filing Basics</h2><p class="note">County, phone numbers, household size. Never SSN.</p><div class="row three"><div class="field"><label>County of residence</label><input data-k="county" value="Example County" /></div><div class="field"><label>Household size (under 65)</label><input data-k="hh_under65" value="2" /></div><div class="field"><label>Household size (65+)</label><input data-k="hh_65plus" value="0" /></div></div><div class="row three"><div class="field"><label>Home phone</label><input data-k="phone_home" value="555-000-1111" /></div><div class="field"><label>Work phone</label><input data-k="phone_work" value="" /></div><div class="field"><label>Cell phone</label><input data-k="phone_cell" value="555-000-2222" /></div></div></section><section class="card"><h2>🏦 A2 · Bank Accounts &amp; Investments</h2><p class="note">Institution + account type + current balance only. <span class="skip-badge">NO account numbers</span></p><div class="entry-block"><div class="row three"><div class="field"><label>Institution name</label><input data-k="bank_1_institution" value="Example Credit Union" /></div><div class="field"><label>Account type</label><input data-k="bank_1_type" value="Checking" /></div><div class="field"><label>Current balance</label><input data-k="bank_1_balance" value="$412.30" /></div></div></div><div class="entry-block"><div class="row three"><div class="field"><label>Institution name</label><input data-k="bank_2_institution" value="" /></div><div class="field"><label>Account type</label><input data-k="bank_2_type" value="" /></div><div class="field"><label>Current balance</label><input data-k="bank_2_balance" value="" /></div></div></div><div class="entry-block"><div class="row three"><div class="field"><label>Institution name</label><input data-k="bank_3_institution" value="" /></div><div class="field"><label>Account type</label><input data-k="bank_3_type" value="" /></div><div class="field"><label>Current balance</label><input data-k="bank_3_balance" value="" /></div></div></div></section><section class="card"><h2>🪙 A3 · Digital Assets (Crypto)</h2><p class="note">Type, exchange/wallet name, current USD value as of today. <span class="skip-badge">NO wallet addresses / private keys</span></p><div class="entry-block"><div class="row three"><div class="field"><label>Type of currency</label><input data-k="crypto_1_currency" value="Bitcoin" /></div><div class="field"><label>Exchange / wallet name</label><input data-k="crypto_1_exchange" value="Example Exchange" /></div><div class="field"><label>Current USD value</label><input data-k="crypto_1_value" value="$1,204.55" /></div></div></div></section><section class="card"><h2>🏠 B · Real Estate</h2><p class="note">Description, current value, balance owed, resulting equity.</p><div class="entry-block"><div class="row three"><div class="field"><label>Description / location</label><input data-k="realestate_1_desc" value="Example St, Example City" /></div><div class="field"><label>Current value</label><input data-k="realestate_1_value" value="$210,000" /></div><div class="field"><label>Balance owed</label><input data-k="realestate_1_owed" value="$180,000" /></div><div class="field"><label>Equity (value - owed)</label><input data-k="realestate_1_equity" value="$30,000" /></div></div></div></section><section class="card"><h2>🚗 C · Other Assets</h2><p class="note">Vehicles, life insurance cash value, other valuables.</p><div class="entry-block"><div class="row three"><div class="field"><label>Description (make/model/year)</label><input data-k="otherasset_1_desc" value="2015 Example Sedan" /></div><div class="field"><label>Current value</label><input data-k="otherasset_1_value" value="$4,500" /></div><div class="field"><label>Balance owed</label><input data-k="otherasset_1_owed" value="$0" /></div></div></div></section><section class="card"><h2>💳 D · Credit Cards</h2><p class="note">Type/issuer, credit limit, balance owed, minimum payment. <span class="skip-badge">NO account numbers</span></p><div class="entry-block"><div class="row three"><div class="field"><label>Type / issuer</label><input data-k="creditcard_1_issuer" value="Example Bank Visa" /></div><div class="field"><label>Credit limit</label><input data-k="creditcard_1_limit" value="$5,000" /></div><div class="field"><label>Balance owed</label><input data-k="creditcard_1_owed" value="$2,340" /></div><div class="field"><label>Minimum payment</label><input data-k="creditcard_1_min" value="$85" /></div></div></div></section><section class="card"><h2>💼 F · Employment</h2><div class="row three"><div class="field"><label>Current employer (or &quot;self-employed&quot;)</label><input data-k="employer" value="Self-employed" /></div><div class="field"><label>Pay frequency</label><input data-k="pay_freq" value="monthly" /></div><div class="field"><label>Gross per pay period</label><input data-k="gross_pay" value="$3,200" /></div></div><div class="row one"><div class="field"><label>How long at current employer</label><input data-k="employer_length" value="2 years" /></div></div></section><section class="card"><h2>💵 G · Non-Wage Household Income</h2><div class="row three"><div class="field"><label>Net self-employment income (monthly)</label><input data-k="income_selfemp" value="$1,100" /></div><div class="field"><label>Unemployment income</label><input data-k="income_unemployment" value="$0" /></div><div class="field"><label>Other (specify)</label><input data-k="income_other" value="" /></div></div></section><section class="card"><h2>🧮 H · Monthly Necessary Living Expenses</h2><p class="note">Actual amounts — the IRS applies its own "allowed" standard where yours is lower.</p><div class="row three"><div class="field"><label>Food / personal care</label><input data-k="exp_food" value="$650" /></div><div class="field"><label>Transportation</label><input data-k="exp_transport" value="$310" /></div><div class="field"><label>Housing &amp; utilities</label><input data-k="exp_housing" value="$1,450" /></div></div><div class="row three"><div class="field"><label>Health insurance</label><input data-k="exp_healthins" value="$220" /></div><div class="field"><label>Out-of-pocket medical</label><input data-k="exp_medical" value="$60" /></div><div class="field"><label>Court-ordered support/alimony</label><input data-k="exp_courtordered" value="$0" /></div></div><div class="row three"><div class="field"><label>Student loan minimum</label><input data-k="exp_studentloan" value="$0" /></div><div class="field"><label>Term life insurance</label><input data-k="exp_lifeins" value="$25" /></div><div class="field"><label>Other (specify)</label><input data-k="exp_other" value="" /></div></div></section><section class="card"><h2>📝 Call Notes</h2><div class="row one"><div class="field"><label>Call notes</label><textarea data-k="call_notes" rows="5"></textarea></div></div></section>
+  <p class="gen-note">Generated from scripts/render_433f.py --mode public · form-433f-data.csv is the single source of truth</p>
+</main>
+<div class="save-status" id="saveStatus">saved locally in this browser</div>
+<script>
+(function () {
+  "use strict";
+  var STORE_KEY = "form433f-callprep-public-v2";
+  var state = {};
+  try { state = JSON.parse(localStorage.getItem(STORE_KEY) || "{}"); } catch (e) { state = {}; }
+  function save() {
+    document.querySelectorAll("[data-k]").forEach(function (el) {
+      var k = el.getAttribute("data-k");
+      state[k] = el.type === "checkbox" ? el.checked : el.value;
+    });
+    try {
+      localStorage.setItem(STORE_KEY, JSON.stringify(state));
+      document.getElementById("saveStatus").textContent = "saved locally · " + new Date().toLocaleTimeString();
+    } catch (e) {}
+  }
+  function restore() {
+    document.querySelectorAll("[data-k]").forEach(function (el) {
+      var k = el.getAttribute("data-k");
+      if (state[k] === undefined) return;
+      if (el.type === "checkbox") el.checked = !!state[k];
+      else el.value = state[k];
+    });
+  }
+  document.addEventListener("input", function (e) { if (e.target.matches("[data-k]")) save(); });
+  document.addEventListener("change", function (e) { if (e.target.matches("[data-k]")) save(); });
+  restore();
+})();
+</script>
+</body>
+</html>
