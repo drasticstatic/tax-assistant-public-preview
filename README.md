@@ -1,10 +1,25 @@
+<!-- readme-standard: 2026-11-02 -->
+<div align="center">
+
+<img src="assets/banner.svg" width="100%" alt="Tax Assistant: scattered stars joined into one constellation, for records gathered into one picture.">
+
 # 🧾 Tax Assistant
 
-> AI-assisted tax position management — back-tax relief navigation, transaction-history reconstruction, filing support
+*AI-assisted tax position management — back-tax relief navigation, transaction-history reconstruction, filing support*
 
-<p align="left"><a href="https://drasticstatic.github.io/tax-assistant-public-preview/"><img src="https://img.shields.io/badge/%F0%9F%8C%90%20Public%20Preview-Configured-brightgreen" alt="Public Preview"></a> <a href="https://github.com/open-condo-software/gitexporter"><img src="https://img.shields.io/badge/Synced%20via-GitExporter-blue" alt="Synced via GitExporter"></a> <a href="https://code.claude.com/docs/en/overview"><img src="https://img.shields.io/badge/Built%20with-Claude%20Code%20CLI-blueviolet" alt="Built with Claude Code CLI"></a> <a href="https://github.com/drasticstatic/tax-assistant/actions/workflows/sync-public.yml"><img src="https://github.com/drasticstatic/tax-assistant/actions/workflows/sync-public.yml/badge.svg" alt="Sync"></a></p>
+![Status](https://img.shields.io/badge/Status-early-d9a441?style=flat-square)
+![For](https://img.shields.io/badge/For-Christopher,_then_others-64748b?style=flat-square)
+<p align="center"><a href="https://drasticstatic.github.io/tax-assistant-public-preview/"><img src="https://img.shields.io/badge/%F0%9F%8C%90%20Public%20Preview-Configured-brightgreen" alt="Public Preview"></a> <a href="https://github.com/open-condo-software/gitexporter"><img src="https://img.shields.io/badge/Synced%20via-GitExporter-blue" alt="Synced via GitExporter"></a> <a href="https://code.claude.com/docs/en/overview"><img src="https://img.shields.io/badge/Built%20with-Claude%20Code%20CLI-blueviolet" alt="Built with Claude Code CLI"></a> <a href="https://github.com/drasticstatic/tax-assistant/actions/workflows/sync-public.yml"><img src="https://github.com/drasticstatic/tax-assistant/actions/workflows/sync-public.yml/badge.svg" alt="Sync"></a></p>
 
----
+<img src="assets/icons/map-pin.svg" width="16" height="16" alt=""> **You are here:** drasticstatic lab › `tax-assistant` · private source · `main` is the working branch · public twin `tax-assistant-public-preview`
+
+</div>
+
+## <img src="assets/icons/compass.svg" width="24" height="24" alt=""> TL;DR
+
+1. <img src="assets/icons/sprout.svg" width="16" height="16" alt=""> **What this is.** A private workspace for AI-assisted tax work. The public twin carries structure and method only, never account detail.
+2. <img src="assets/icons/users-round.svg" width="16" height="16" alt=""> **Who it is for.** Christopher now; a public-safe write-up of the method is planned for others.
+3. <img src="assets/icons/footprints.svg" width="16" height="16" alt=""> **Do this first.** [Explore the public preview](https://drasticstatic.github.io/tax-assistant-public-preview/).
 
 **🌐 [Explore the Public Preview →](https://drasticstatic.github.io/tax-assistant-public-preview/)**
 
@@ -51,3 +66,9 @@ This repo's operating posture is full legal compliance pursued through legitimat
 ---
 
 *Companion repos in this ecosystem: [Divorce & Custody Assistant](https://drasticstatic.github.io/divorce-custody-assistant-public-preview/) · [Trading Assistant](https://drasticstatic.github.io/trading-assistant-public-preview/) (see its live [Tax Tracker](https://drasticstatic.github.io/trading-assistant-public-preview/data/tax/tax.html))*
+
+## <img src="assets/icons/git-pull-request.svg" width="24" height="24" alt=""> Suggest a change
+
+Noticed something? Open an [issue](../../issues) or a pull request against `main`; Christopher reads them and a person with the role merges. Not on GitHub? Reach Christopher through [his contact page](https://drasticstatic.github.io/resume/pages/contact.html).
+
+<sub>The front door follows the living [README standard](https://github.com/drasticstatic/my-template/blob/main/README-STANDARD.md). Copy it, improve it.</sub>
