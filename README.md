@@ -20,6 +20,7 @@
 1. <img src="assets/icons/sprout.svg" width="16" height="16" alt=""> **What this is.** A private workspace for AI-assisted tax work. The public twin carries structure and method only, never account detail.
 2. <img src="assets/icons/users-round.svg" width="16" height="16" alt=""> **Who it is for.** Christopher now; a public-safe write-up of the method is planned for others.
 3. <img src="assets/icons/footprints.svg" width="16" height="16" alt=""> **Do this first.** [Explore the public preview](https://drasticstatic.github.io/tax-assistant-public-preview/).
+4. <img src="assets/icons/book-open.svg" width="16" height="16" alt=""> **The reading room.** [`business/`](business/README.md): the expense ledger, the IRS notes and their PDFs, public on purpose.
 
 **🌐 [Explore the Public Preview →](https://drasticstatic.github.io/tax-assistant-public-preview/)**
 
