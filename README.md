@@ -7,7 +7,7 @@
 
 *AI-assisted tax position management — back-tax relief navigation, transaction-history reconstruction, filing support*
 
-![Status](https://img.shields.io/badge/Status-early-d9a441?style=flat-square)
+![Status](https://img.shields.io/badge/Status-early-2962ff?style=flat-square)
 ![For](https://img.shields.io/badge/For-Christopher,_then_others-64748b?style=flat-square)
 <p align="center"><a href="https://drasticstatic.github.io/tax-assistant-public-preview/"><img src="https://img.shields.io/badge/%F0%9F%8C%90%20Public%20Preview-Configured-brightgreen" alt="Public Preview"></a> <a href="https://github.com/open-condo-software/gitexporter"><img src="https://img.shields.io/badge/Synced%20via-GitExporter-blue" alt="Synced via GitExporter"></a> <a href="https://code.claude.com/docs/en/overview"><img src="https://img.shields.io/badge/Built%20with-Claude%20Code%20CLI-blueviolet" alt="Built with Claude Code CLI"></a> <a href="https://github.com/drasticstatic/tax-assistant/actions/workflows/sync-public.yml"><img src="https://github.com/drasticstatic/tax-assistant/actions/workflows/sync-public.yml/badge.svg" alt="Sync"></a></p>
 

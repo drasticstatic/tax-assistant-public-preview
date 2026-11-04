@@ -6,7 +6,7 @@
 
 *Every IRS fact the business pages lean on, quoted where the IRS's own words carry the weight, each with its page and the day it was read. A reading room, not a return.*
 
-![Kind](https://img.shields.io/badge/Kind-notes-d9a441?style=flat-square)
+![Kind](https://img.shields.io/badge/Kind-notes-2962ff?style=flat-square)
 ![Read](https://img.shields.io/badge/Read-2026--11--04-8a6a2a?style=flat-square)
 ![For](https://img.shields.io/badge/For-Christopher%2C_a_CPA%2C_and_the_IRS_if_it_asks-64748b?style=flat-square)
 

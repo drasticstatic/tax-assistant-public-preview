@@ -6,7 +6,7 @@
 
 *The first proposal written against the expense ledger. Small, specific, and the kind of line a sole proprietor keeps on purpose.*
 
-![Proposal](https://img.shields.io/badge/Proposal-001-d9a441?style=flat-square)
+![Proposal](https://img.shields.io/badge/Proposal-001-2962ff?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-asking-8a6a2a?style=flat-square)
 ![Started](https://img.shields.io/badge/Started-2026--11--04-b45309?style=flat-square)
 ![For](https://img.shields.io/badge/For-Christopher-64748b?style=flat-square)
