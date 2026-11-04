@@ -24,8 +24,18 @@
 |---|---|
 | [EXPENSE-LEDGER.md](EXPENSE-LEDGER.md) | every tool, service and machine, its price, its billing, the business share (Christopher's call), where the receipt lives |
 | [001-github-pro.md](001-github-pro.md) | the first proposal written against the ledger: GitHub Pro, $4 a month, what it buys and why now |
+| [IRS-NOTES.md](IRS-NOTES.md) | every IRS fact the ledger leans on, quoted with its page and the day it was read, and what we intend: an honest ledger, the existing balance resolved in good standing |
+| [pdf/](pdf/) | each page above rendered to PDF on every push to `main` (`EXPENSE-LEDGER.pdf`, `IRS-NOTES.pdf`, `001-github-pro.pdf`, `README.pdf`), brass on slate, for a CPA's desk or a printed folder |
+
+## <img src="../assets/icons/globe.svg" width="24" height="24" alt=""> The reading room
+
+The public twin at <https://drasticstatic.github.io/tax-assistant-public-preview/> carries these pages and their PDFs (rendered as pages at [github.com/drasticstatic/tax-assistant-public-preview/tree/main/business](https://github.com/drasticstatic/tax-assistant-public-preview/tree/main/business)), so a CPA, a partner organisation or a stranger in the same place can read them without an account: the folder `business/` travels on the public lane as it stands, every file read by the lane's tripwire before it publishes. The PDFs are rendered by the repository's own workflow (`.github/workflows/pdf.yml`; the local twin is `scripts/render-pdfs.sh`) in the drasticstatic lab's tone from the fleet's register, brass on slate (`d9a441` / `334155` / `8a6a2a` / `f1f5f9`, TONES.md in my-template). What never travels: the filings, correspondence and holdings lanes, and any amount tied to a live matter.
+
+**Legal:** the entity, filings and counsel folders live in the private repository [`drasticstatic/legal`](https://github.com/drasticstatic/legal) ("drasticstatic (trading as a business): legal"). Questions for a CPA are drafted against this ledger and land in its `counsel/` folder; its README points back here.
 
 ## <img src="../assets/icons/users-round.svg" width="24" height="24" alt=""> The IRS pages this leans on (read 2026-11-04)
+
+The short form; [IRS-NOTES.md](IRS-NOTES.md) holds every fact, quoted, with its page and date.
 
 - *Publication 334, Tax Guide for Small Business (2025)*: "ordinary" is "common and accepted in your field"; "necessary" is "helpful and appropriate", not indispensable; a partly personal expense must be separated; equipment "expected to last more than a year" is generally not deducted whole in the year bought, except through section 179 or the de minimis safe harbor ("up to $2,500 per item or invoice" without an applicable financial statement); the simplified home-office method is "$5 by the area" used "regularly and exclusively", "limited to 300 square feet"; self-employment tax applies from $400 of net earnings. <https://www.irs.gov/publications/p334>
 - *Get an employer identification number*: free, online, one per responsible party per day; "Beware of websites that charge for an EIN". A sole proprietor may have one. <https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number>
