@@ -6,8 +6,8 @@
 
 *A live catalogue of what the work runs on and what it costs, kept in the open so the record is ready the day the breakers flip.*
 
-![Kind](https://img.shields.io/badge/Kind-ledger-2962ff?style=flat-square)
-![Since](https://img.shields.io/badge/Since-2026--11--04-8a6a2a?style=flat-square)
+![Kind](https://img.shields.io/badge/Kind-ledger-800020?style=flat-square)
+![Since](https://img.shields.io/badge/Since-2026--11--04-5c1a2b?style=flat-square)
 ![For](https://img.shields.io/badge/For-Christopher%2C_a_CPA%2C_and_anyone_doing_the_same-64748b?style=flat-square)
 
 </div>
@@ -25,11 +25,11 @@
 | [EXPENSE-LEDGER.md](EXPENSE-LEDGER.md) | every tool, service and machine, its price, its billing, the business share (Christopher's call), where the receipt lives |
 | [001-github-pro.md](001-github-pro.md) | the first proposal written against the ledger: GitHub Pro, $4 a month, what it buys and why now |
 | [IRS-NOTES.md](IRS-NOTES.md) | every IRS fact the ledger leans on, quoted with its page and the day it was read, and what we intend: an honest ledger, the existing balance resolved in good standing |
-| [pdf/](pdf/) | each page above rendered to PDF on every push to `main` (`EXPENSE-LEDGER.pdf`, `IRS-NOTES.pdf`, `001-github-pro.pdf`, `README.pdf`), in the Labs tone, for a CPA's desk or a printed folder |
+| [pdf/](pdf/) | each page above rendered to PDF on every push to `main` (`EXPENSE-LEDGER.pdf`, `IRS-NOTES.pdf`, `001-github-pro.pdf`, `README.pdf`), in maroon on navy, for a CPA's desk or a printed folder |
 
 ## <img src="../assets/icons/globe.svg" width="24" height="24" alt=""> The reading room
 
-The public twin at <https://drasticstatic.github.io/tax-assistant-public-preview/> carries these pages and their PDFs (rendered as pages at [github.com/drasticstatic/tax-assistant-public-preview/tree/main/business](https://github.com/drasticstatic/tax-assistant-public-preview/tree/main/business)), so a CPA, a partner organisation or a stranger in the same place can read them without an account: the folder `business/` travels on the public lane as it stands, every file read by the lane's tripwire before it publishes. The PDFs are rendered by the repository's own workflow (`.github/workflows/pdf.yml`; the local twin is `scripts/render-pdfs.sh`) in the drasticstatic lab's tone from the fleet's register, electric blue on navy (`2962ff` / `1a1a2e` / `0f3460` / `e8f1ff`, TONES.md in my-template). What never travels: the filings, correspondence and holdings lanes, and any amount tied to a live matter.
+The public twin at <https://drasticstatic.github.io/tax-assistant-public-preview/> carries these pages and their PDFs (rendered as pages at [github.com/drasticstatic/tax-assistant-public-preview/tree/main/business](https://github.com/drasticstatic/tax-assistant-public-preview/tree/main/business)), so a CPA, a partner organisation or a stranger in the same place can read them without an account: the folder `business/` travels on the public lane as it stands, every file read by the lane's tripwire before it publishes. The PDFs are rendered by the repository's own workflow (`.github/workflows/pdf.yml`; the local twin is `scripts/render-pdfs.sh`) in drasticstatic's own tone from the fleet's register, maroon on navy (`800020` / `1a1a2e` / `5c1a2b` / `fbeef1`, accent `0f3460`, TONES.md in my-template). What never travels: the filings, correspondence and holdings lanes, and any amount tied to a live matter.
 
 **Legal:** the entity, filings and counsel folders live in the private repository [`drasticstatic/legal`](https://github.com/drasticstatic/legal) ("drasticstatic (trading as a business): legal"). Questions for a CPA are drafted against this ledger and land in its `counsel/` folder; its README points back here.
 
