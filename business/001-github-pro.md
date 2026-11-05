@@ -21,6 +21,8 @@
 4. **Until it is bought,** the watchdog on `proposals-thef` reports every push by anyone but the steward (WATCHDOG.md there). A watchdog barks; Pro is the lock.
 5. **The expense line.** $48 a year, 100% business: every repository on the account is the work. It goes on the ledger the day it is bought, with the receipt's folder named.
 
+> **What Pro will not do (checked Nov 5, 2026).** It does not make anyone read-only. GitHub's page says "Collaborators can't have read-only access to repositories owned by a personal account" and points to moving a repository into an organisation. Pro's rules decide *how* a collaborator's change lands (a pull request first); the person still holds write. A true read-only seat needs an organisation repository, as the reading rooms already do. <https://docs.github.com/en/account-and-profile/reference/permission-levels-for-a-personal-account-repository>
+
 ## <img src="../assets/icons/footprints.svg" width="24" height="24" alt=""> Decision
 
 | Door | Cost | What changes |
