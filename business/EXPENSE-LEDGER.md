@@ -159,3 +159,11 @@ The simplified method is $5 per square foot of space used "regularly and exclusi
 - The hours, however Christopher chooses to count them.
 
 *Not tax advice. Kept so the truth is cheap to tell.*
+
+## Contributed support (recorded, not characterised)
+
+Money that came in to keep the work alive, recorded beside the expenses it paid so the ledger reads whole. Nothing here asserts a tax treatment; a CPA decides ([IRS-NOTES.md](./IRS-NOTES.md)).
+
+| Date | From | Amount | For | What it paid | Receipt | Note |
+|---|---|---|---|---|---|---|
+| Nov 2026 | Isaiah Kenney Zimbleman (The Holy Earth Foundation) | $1,000 | work on THEF's GitHub rollout and the command center | prop-firm and TradeCopia subscriptions, groceries, phone bill | Christopher to fill (how it was paid) | public by Christopher's choice (Nov 6, 2026): it kept the desks running while the bank was at zero |
