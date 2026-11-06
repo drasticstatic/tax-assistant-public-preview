@@ -28,7 +28,7 @@ A row at **$0** is still a row: the point of the ledger is that nothing the work
 | Augment Intent 0.5.0 / Auggie CLI | Kavanah's old seat; the app is still installed, the `auggie` MCP server does not connect | ended | $0 now | | | | | keep the row: history |
 | 21st-dev (MCP server) | *UI components*, by its name; not authenticated on 2026-11-03 | not in use | $0 as it stands; paid plans exist: Christopher to fill if one is taken | | ? | | | reconnect or drop it (SOP-ARB-008, yours to do) |
 | rtk 0.29.0 | a proxy to cut agents' token use (its own description) | installed via Homebrew | $0 as installed; licence not checked | | 100% | 2026 | | use not checked |
-| ntfy | phone alerts for the desks (SOP-ARB-005) | free tier | $0 | | 100% | 2026 | | a paid tier exists if volume grows |
+| ntfy | phone alerts for the desks (SOP-ARB-005) | free tier today; **Supporter proposed** | $0 now; Supporter $5/month (3 reserved topics), Pro $10/month (10), read ntfy.sh 2026-11-06 | monthly | 100% | 2026 | | proposed Nov 6: reserve the three public names (`fortunatrades-perps-live`, `fortuna-market-news`, `fortunatrades-arb-live`) so only the desks can post to them; Christopher to decide |
 | shields.io badges, GitHub Pages | the badges on every page; the public twins' hosting | free | $0 | | 100% | | | |
 
 ### Development tools
